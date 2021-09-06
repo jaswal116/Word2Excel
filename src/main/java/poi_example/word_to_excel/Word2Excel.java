@@ -1,6 +1,5 @@
 package poi_example.word_to_excel;
 
-import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -26,13 +26,10 @@ public class Word2Excel {
 
 	public static void main(String[] args) throws IOException {
 
-		try (XWPFDocument docx = new XWPFDocument(new FileInputStream(
-				"C:\\Users\\jaswa\\Desktop\\munish_new\\MMAI\\capstone\\20210716 - CDA Team Meeting.docx"));
+		try (XWPFDocument docx = new XWPFDocument(new FileInputStream("C:\\Users\\jaswa\\Desktop\\munish_new\\MMAI\\capstone\\20210716 - CDA Team Meeting.docx"));
 				XWPFWordExtractor we = new XWPFWordExtractor(docx);
 				XSSFWorkbook workbook = new XSSFWorkbook();
-				OutputStream out = new FileOutputStream(
-						"C:\\Users\\jaswa\\Desktop\\munish_new\\MMAI\\capstone\\Speak1.xlsx");
-				ByteArrayOutputStream out2 = new ByteArrayOutputStream();) {
+				OutputStream out = new FileOutputStream("C:\\Users\\jaswa\\Desktop\\munish_new\\MMAI\\capstone\\Speak1.xlsx");) {
 			// create a new Sheet using Workbook.createSheet()
 			Sheet sheet = workbook.createSheet(SHEET);
 
